@@ -1,0 +1,22 @@
+extends ../layouts/default.jade
+
+block main
+  h2= title
+
+block content
+  div.navbar.navbar-fixed-top
+    div.navbar-inner
+      div.container
+        ul.nav.navbar-nav
+          li()
+            a(href="/outbox") Outbox
+          li()
+            a(href="/message") New message
+          li()
+            a(href="/homemessage") Inbox
+          li()
+            a(href="/friend") Friend
+        button Sign Out
+  div#content_homemessage
+
+    div.viewmessage

@@ -1,0 +1,14 @@
+extends ../layouts/default.jade
+
+block main
+  h2= title
+
+block content
+  .container
+   form.form-signin(action="/login", method="post")
+    h2.form-signin-heading 
+    input.input-block-level(type="text", name="email", placeholder="Email address")
+    input.input-block-level(type="password", name="password", placeholder="Password")
+    label.checkbox.
+     <input type="checkbox" value="remember-me" /> Remember me
+    button.btn.btn-large.btn-primary(type="submit") Sign in
